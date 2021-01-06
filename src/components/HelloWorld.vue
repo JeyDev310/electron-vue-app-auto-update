@@ -33,9 +33,26 @@
 <script>
 export default {
   name: 'HelloWorld',
+    data: function() {
+    return {
+      state: "Thinking…",
+    };
+  },
   props: {
     msg: String
-  }
+  },
+  mounted() {
+  window.ipcRenderer.on("updater", (event, message) => {
+    switch (message) {
+      case "update_available":
+        this.state = "Available";
+        break;
+      case "update_not_available":
+        this.state = "Not Available";
+        break;
+    }
+  });
+},
 }
 </script>
 

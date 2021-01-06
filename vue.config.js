@@ -9,7 +9,8 @@ module.exports = {
             private: true,
           }
         ]
-      }
+      },
+      preload: "src/preload.js", // this one
     }
   }
 };
