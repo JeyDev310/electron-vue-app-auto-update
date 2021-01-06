@@ -1,6 +1,8 @@
 {
   "name": "electron-vue-app-auto-update",
-  "version": "0.1.0",
+  "version": "0.1.3",
+  "description": "electron-vue-app",
+  "owner": "abotel935",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -9,7 +11,8 @@
     "electron:build": "vue-cli-service electron:build",
     "electron:serve": "vue-cli-service electron:serve",
     "postinstall": "electron-builder install-app-deps",
-    "postuninstall": "electron-builder install-app-deps"
+    "postuninstall": "electron-builder install-app-deps",
+    "electron:publish": "vue-cli-service electron:build -p always"
   },
   "main": "background.js",
   "dependencies": {

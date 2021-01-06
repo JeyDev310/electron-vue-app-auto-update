@@ -1,5 +1,5 @@
 provider: github
 private: true
 owner: abotel935
-repo: https://github.com/abotel935/electron-vue-app-auto-update
+repo: electron-vue-app-auto-update
 token: 5d9a5648112fd4b15a21055367f073382d610578

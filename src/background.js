@@ -5,6 +5,7 @@ import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS_DEVTOOLS } from 'electron-devtools-installer'
 const isDevelopment = process.env.NODE_ENV !== 'production'
 import { autoUpdater } from 'electron-updater'
+const path = require('path')
 
 autoUpdater.logger = require("electron-log");
 autoUpdater.logger.transports.file.level = "info";
